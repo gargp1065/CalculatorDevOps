@@ -8,14 +8,14 @@ public class CalculatorTest {
 
     @Test
     public void factorialTruePositive(){
-        assertEquals("Finding factorial of a number for True Positive", 720, calculator.fact(6), DELTA);
-        assertEquals("Finding factorial of a number for True Positive", 6, calculator.fact(3), DELTA);
+        assertEquals("Finding factorial of a number for True Positive", 720, calculator.factorial(6), DELTA);
+        assertEquals("Finding factorial of a number for True Positive", 6, calculator.factorial(3), DELTA);
     }
 
     @Test
     public void factorialFalsePositive(){
-        assertNotEquals("Finding factorial of a number for False Positive", 120, calculator.fact(7), DELTA);
-        assertNotEquals("Finding factorial of a number for False Positive", 2, calculator.fact(3), DELTA);
+        assertNotEquals("Finding factorial of a number for False Positive", 120, calculator.factorial(7), DELTA);
+        assertNotEquals("Finding factorial of a number for False Positive", 2, calculator.factorial(3), DELTA);
     }
 
     @Test
@@ -32,14 +32,14 @@ public class CalculatorTest {
 
     @Test
     public void logTruePositive(){
-        assertEquals("Finding natural log for True Positive", 0, calculator.naturalLog(1), DELTA);
-        assertEquals("Finding natural log for True Positive", 0, calculator.naturalLog(1), DELTA);
+        assertEquals("Finding natural log for True Positive", 0, calculator.nlog(1), DELTA);
+        assertEquals("Finding natural log for True Positive", 0, calculator.nlog(1), DELTA);
     }
 
     @Test
     public void logFalsePositive(){
-        assertNotEquals("Finding natural log for False Positive", 6, calculator.naturalLog(2.4), DELTA);
-        assertNotEquals("Finding natural log for False Positive", 8.9, calculator.naturalLog(2.1), DELTA);
+        assertNotEquals("Finding natural log for False Positive", 6, calculator.nlog(2.4), DELTA);
+        assertNotEquals("Finding natural log for False Positive", 8.9, calculator.nlog(2.1), DELTA);
     }
 
     @Test
